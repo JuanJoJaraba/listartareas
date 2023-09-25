@@ -9,7 +9,7 @@ function App() {
     const fetchTasks = async () => {
       const response = await axios.get('https://api.todoist.com/rest/v2/tasks', {
         headers: {
-          Authorization: 'Bearer 22babbe5c165938185774d51413a37f273a7bcb2'
+          Authorization: 'Bearer token'
         }
       });
       setTasks(response.data);
